@@ -19,19 +19,23 @@
     </head>
     <body>
         <div class="container">
-            <div class="header"></div>
-            <div class="menu">
-            
+            <div class="header">
+                
                 <div class="nav">
-                    <div class="btn-home ts-1-5 txt-l"><a href="/">Home</a></div>
-                    <div class="btn-search ts-1-5 txt-l">Properties</div>
-                    <div class="btn-checks ts-1-5 txt-l">Checks</div>
-                    <div class="btn-waterdays ts-1-5 txt-l">Water Days</div>
-                    <div class="btn-misc ts-1-5 txt-l">Misc</div>
-                    <div class="btn-admin ts-1-5 txt-l">Admin</div>
+                    <div class="logo"><img src="/img/zayas-dev-01.png" height="30px"></div>
+                    
+                    <a class="btn-home" href="/"><div class="ts-1-5 txt-c">Home</div></a>
+                    <a class="btn-search" href="/"><div class="btn-search ts-1-5 txt-c">Properties</div></a>
+                    <a class="btn-checks" href="/"><div class="btn-checks ts-1-5 txt-c">Checks</div></a>
+                    <a class="btn-waterdays" href="/"><div class="btn-waterdays ts-1-5 txt-c">Water Days</div></a>
+                    <a class="btn-misc" href="/"><div class="btn-misc ts-1-5 txt-c">Misc</div></a>
+                    <a class="btn-admin" href="/"><div class="btn-admin ts-1-5 txt-c">Admin</div></a>
+                
                 </div>
     
             </div>
+            
+            <div class="menu"></div>
             <div class="prop-info"></div>
             <div class="main"></div>
             <div class="responses"></div>        
