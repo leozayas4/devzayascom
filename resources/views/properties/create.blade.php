@@ -44,7 +44,26 @@
             
             <div class="menu"></div>
             <div class="prop-info"></div>
-            <div class="main"></div>
+            <div class="main">
+                
+                <form method="POST">
+                    <div>
+                        <input type="text" name="job_number">
+                    </div>
+                    <div>
+                        <input type="text" name="job_name">
+                    </div>
+                    <div>
+                        <input type="text" name="job_address">
+                    </div>
+                    <div>
+                        <input type="text" name="job_address2">
+                    </div>
+                    <div>
+                        <button type="submit" name="submit">Submit Property</button>
+                    </div>
+                </form>
+            </div>
             <div class="responses"></div>        
             <div class="users"></div>        
             <div class="footer"></div>        

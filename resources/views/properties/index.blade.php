@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Properties</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -31,18 +31,13 @@
                     <a class="btn-misc" href="/"><div class="btn-misc ts-1-5 txt-c">Misc</div></a>
                     <a class="btn-admin" href="/"><div class="btn-admin ts-1-5 txt-c">Admin</div></a>
                 
-                 <div class="property-search">
-                    <select name="properties">
-                        <option value="">Search for property</option>
-                        <option value="25">Some Job</option>
-                        <option value="174">Some Longer Job</option>
-                        <option value="185">Some Even Longer Job</option>
-                    </select>
                 </div>
-
+    
             </div>
             
-            <div class="menu"></div>
+            <div class="menu">
+            </div>
+            
             <div class="prop-info"></div>
             <div class="main"></div>
             <div class="responses"></div>        
