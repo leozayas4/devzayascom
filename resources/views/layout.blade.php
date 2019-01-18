@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Properties</title>
+        <title></title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -16,20 +16,10 @@
         <style>
 
         </style>
-    </head>
-    <body>
-        <div class="container">
-            <ul>
-                @foreach($properties as $property)
-                <li>
-                    <a href="/properties/{{ $property->id }}/edit">
-                        {{ $property->job_number}} - {{ $property->job_name}}
-                    </a>
-                </li>
-                @endforeach
-            </ul>
-        </div>
-        
-        
-    </body>
+</head>
+<body>
+    <div class="container" style="width: 600px;">
+        @yield('content')
+    </div>
+</body>
 </html>

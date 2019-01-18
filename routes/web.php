@@ -15,6 +15,5 @@ Route::get('/', function () {
     return view('first-test');
 });
 
-Route::get('/properties', 'PropertiesController@index');
-Route::get('/properties/create', 'PropertiesController@create');
+Route::resource('properties', 'PropertiesController');
 
