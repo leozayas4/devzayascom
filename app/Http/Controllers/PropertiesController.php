@@ -29,7 +29,8 @@ class PropertiesController extends Controller
             'job_number' => request('job_number'),
             'job_name' => request('job_name'),
             'address' => request('address'),
-            'address2' => request('address2')
+            'address2' => request('address2'),
+            'active' => request('active')
          ]);
         
         return redirect('/properties');
@@ -58,7 +59,8 @@ class PropertiesController extends Controller
             'job_number',
             'job_name',
             'address',
-            'address2'
+            'address2',
+            'active'
         ]));
         
         return redirect('/properties');

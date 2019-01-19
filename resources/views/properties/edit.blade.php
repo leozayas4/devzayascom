@@ -41,16 +41,16 @@
             </div>
         </div>
 
-       <div><button type="submit" style="margin-bottom: 20px;">Make Changes</button>
-    </form>
-
-    <form method="post" action="/properties/{{ $property->id }}">
+    <div><button type="submit" style="margin-bottom: 20px;">Make Changes</button>
+        <form method="post" action="/properties/{{ $property->id }}">
         @method('DELETE')
         @csrf
         
         <button name="delete" type="submit">Delete Property</button>
         
-        
         </form>
+    </div>    
+
+    </form>
 
 @endsection

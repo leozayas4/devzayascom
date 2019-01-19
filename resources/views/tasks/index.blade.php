@@ -1,15 +1,10 @@
-<?php
-    ini_set("display_errors", 1);
-    date_default_timezone_set('America/Chicago');
-?>
-
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title></title>
+        <title>Tasks</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -21,10 +16,20 @@
         <style>
 
         </style>
-</head>
-<body>
-    <div class="container" style="width: 800px;">
-        @yield('content')
-    </div>
-</body>
+    </head>
+    <body>
+        <div class="container">
+            <ul>
+                @foreach($tasks as $task)
+                <li>
+                    <a href="/tasks/{{ $task->id }}/edit">
+                        {{ $task->id}} - {{ $task->description}}
+                    </a>
+                </li>
+                @endforeach
+            </ul>
+        </div>
+        
+        
+    </body>
 </html>

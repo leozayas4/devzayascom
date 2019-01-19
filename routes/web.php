@@ -15,5 +15,9 @@ Route::get('/', function () {
     return view('first-test');
 });
 
+//Route::get('/first-test', 'first-test');
+    
+
 Route::resource('properties', 'PropertiesController');
+Route::resource('tasks', 'TaskController');
 

@@ -19,6 +19,11 @@ class CreatePropertiesTable extends Migration
             $table->string('job_name');
             $table->string('address');
             $table->string('address2');
+            $table->string('contact_name');
+            $table->string('contact_phone');
+            $table->unsignedInteger('account_manager');
+            $table->unsignedInteger('tech');
+            $table->boolean('active')->default('1');
             $table->timestamps();
         });
     }
